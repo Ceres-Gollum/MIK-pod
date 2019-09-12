@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StarWars Fetch</title>
+</head>
+<body>
+<script
+        src="http://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+</script>
+<script>
+
+
+    "use strict";
+
+    // Using the Star Wars API, log the first film a Star Wars
+    // character's homeworld appeared in
+
+
+    function charactersHomeplanet(name) {
+        const filterData = (data) => data.filter((d) => d.name === name);
+
+        return new Promise(function (resolve) {
+            fetch('https://swapi.co/api/people')
+                .then( fetch("https://swapi.co/api/people/?page=2"))
+                .then((res) => res.json())
+                .then((data) => data.results)
+                .then((data) => filterData(data))
+                .then((data) =>{
+                   homePlanetMovie( data[0].homeworld)
+
+                })
+
+                .catch(function (err) {
+                    console.log('error');
+                });
+        })
+    }
+
+charactersHomeplanet('Luke Skywalker').then((message) => console.log(message));
+
+    function homePlanetMovie(planet){
+        fetch(`${planet}`)
+            .then((data) => data.json())
+            .then((data) => data)
+            .then((data) => fetch( data.films[data.films.length - 1]))
+                .then((data) => data.json())
+                .then( (data) => console.log(data.title))
+    }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
