@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Rey",
+    "coolness": 9,
+    "homeworlds": "Tatooine"
+  },
+  {
+    "name": "Luke Skywalker",
+    "coolness": 9,
+    "homeworlds": "Jakku"
+  },
+  {
+    "name": "Darth Vadar",
+    "coolness": 10,
+    "homeworlds": "Tatooine"
+  }
+]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matts Lab </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    Bootstrap 4 CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--    jQuery 2.x CDN-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!--    jQuery 3.x CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100%;
+            /*background: black;*/
+        }
+        main{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #userText, #submitBtn{
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<section class="container-fluid ">
+    <p id="demo"></p>
+
+    <input class="mx-auto" type="text" id="userText" placeholder="Enter Username...">
+    <br><br>
+    <button class="mx-auto" id="submitBtn">Submit Username!</button>
+    <br><br><br>
+    <p class="text-center">Type one of the following:
+        <strong>sandy123</strong>,
+        <strong>bob234</strong>,
+        <strong>sally345</strong>.</p>
+</section>
+
+<script src="matt.js"></script>
+</body>
+</html>
