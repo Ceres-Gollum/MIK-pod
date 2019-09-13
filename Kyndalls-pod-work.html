@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Refactoring es5 syntax to es6</title>
+</head>
+<body>
+    <script>
+
+
+        // From the refactoring bonuses
+
+        // var movies = [
+        //     {
+        //         name: "LOTR",
+        //         year: "2001",
+        //         genre: "Fantasy"
+        //     },
+        //     {
+        //         name: "The Matrix",
+        //         year: "1999",
+        //         genre: "Sci-Fi"
+        //     },
+        //     {
+        //         name: "Shine",
+        //         year: "1996",
+        //         genre: "Drama"
+        //     }
+        // ];
+
+        // refactored movies :
+        const movies = [
+            {
+                name: "LOTR",
+                year: "2001",
+                genre: "Fantasy"
+            },
+            {
+                name:"The Matrix",
+                year:"1999",
+                genre:"Sci-fi"
+            },
+            {
+                name:"Shine",
+                year:"1996",
+                genre:"Drama"
+            }
+            ];
+
+
+        // From the refactoring bonus
+
+        // function buildMovieHTML(movie) {
+        //     var html = "";
+        //     html += '<ul><li>' + movie.name;
+        //     html +=  '</li><li>' + movie.year;
+        //     html += '</li><li>' + movie.genre + '</li></ul>';
+        //     return html;
+        // }
+
+        // refactored buildMovieHTML
+        function buildMovieHTML(movie){
+            let html = "";
+            html += `
+                ${movie.name}`;
+            html += `
+                 ${movie.year}`;
+            html += `
+                ${movie.genre}`;
+            return html;
+        }
+
+
+
+
+
+
+      // from FreeCodeCamp
+
+        var myConcat = function(arr1, arr2) {
+            "use strict";
+            return arr1.concat(arr2);
+        };
+        // test your code
+        console.log(myConcat([1, 2], [3, 4, 5]));
+// REFACTORED
+        const myConcat = (arr1, arr2) => {
+            "use strict";
+            return arr1.concat(arr2);
+        };
+        // test your code
+        console.log(myConcat([1, 2], [3, 4, 5]));
+    </script>
+</body>
+</html>
