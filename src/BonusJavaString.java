@@ -62,11 +62,11 @@ public class BonusJavaString {
 
 
 
-        Create an application that allows the user to enter a sentence
-        and tells them how many vowels and consonants were used.
-        Example:
-        input - "The hill are alive."
-        output - 5 vowels and 10 consonants
+//        Create an application that allows the user to enter a sentence
+//        and tells them how many vowels and consonants were used.
+//        Example:
+//        input - "The hill are alive."
+//        output - 5 vowels and 10 consonants
 
         System.out.println("enter a sentence: ");
         String userSentence = input.nextLine();
