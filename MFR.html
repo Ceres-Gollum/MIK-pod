@@ -135,13 +135,55 @@
 
         // PROBLEM 10 - create a function that when given an array of numbers, returns the sum of even numbers
 
+        const nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+        const evenAdd = nums.reduce((count, num) => {
+            if(num % 2 === 0){
+                count += num;
+            }
+            return count;
+        },0);
+
+        console.log(evenAdd);
+
         // PROBLEM 11 - create a function that when given an array of numbers, returns the sum of all numbers evenly divisible by 10
+
+        const divByTenAdd = nums.reduce((count, num) => {
+            if(num % 10 === 0){
+                count += num;
+            }
+            return count;
+        }, 0);
+
+        console.log(divByTenAdd);
 
         // PROBLEM 12 - create a function that when given an array of names, returns a string of all the first letters of each name
 
+        const names = ['Karen', 'Bill', 'Morgan', 'Terry', 'Drew'];
+
+        const firstLetterOfNames = names.map(name => name.slice(0,1));
+
+        console.log(firstLetterOfNames);
+
+
         // PROBLEM 13 - create a function that when given an array of values, returns an array of only the truthy values
 
+        const values = [0, -1, true, false, "true", "false", "tim", null];
+
+        const isTruthy = values.reduce((arr, value) => {
+            if(!!value === true){
+                arr.push(value);
+            }
+            return arr
+
+        },[]);
+
+        console.log(isTruthy);
+
         // PROBLEM 14 - create a function that when given an object, returns the property values as an array of elements
+
+
+
 
         // PROBLEM 15 - create a function that when given an object, returns the property values as an array of elements
 
