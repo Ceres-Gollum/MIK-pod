@@ -1,4 +1,8 @@
 import java.util.Scanner;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.text.DateFormat;
+import java.util.Calendar;
 
 public class BonusJavaString {
     public static void main(String[] args) {
@@ -15,10 +19,10 @@ public class BonusJavaString {
 
         System.out.println("enter birthday in this format: MM/DD/YYYY ");
         String date = input.nextLine();
-
+//
         String month = date.substring(0,2);
         String dayYear = date.substring(3,5) + ", " + date.substring(6);
-        System.out.println(month);
+
 
 
         if(month.equals( "01")){
@@ -61,13 +65,13 @@ public class BonusJavaString {
         System.out.println(month + dayYear);
 
 
-
-//        Create an application that allows the user to enter a sentence
-//        and tells them how many vowels and consonants were used.
-//        Example:
-//        input - "The hill are alive."
-//        output - 5 vowels and 10 consonants
-
+//
+////        Create an application that allows the user to enter a sentence
+////        and tells them how many vowels and consonants were used.
+////        Example:
+////        input - "The hill are alive."
+////        output - 5 vowels and 10 consonants
+//
         System.out.println("enter a sentence: ");
         String userSentence = input.nextLine();
 
@@ -86,10 +90,66 @@ public class BonusJavaString {
             }else if (y != -1){
                 consonantCount += 1;
             }
-
         }
         System.out.println( vowelCount + " vowels and " + consonantCount + " consonants");
 
+//        https://www.w3resource.com/java-exercises/string/index.php
+//        Write a java program to print current date and time in the specified format.
+//
+//        Sample Output:
+//
+//        Current Date and Time :
+//        June 19, 2017
+//        3:13 pm
+        Date currentDate = Calendar.getInstance().getTime();
+        DateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy hh:mm:ss");
+        String strDate = dateFormat.format(currentDate);
+        System.out.println("Current Date and Time: " );
+        month = strDate.substring(0,2);
+        dayYear = strDate.substring(3,5) + ", " + strDate.substring(6);
+
+        if(month.equals( "01")){
+            month = "January ";
+
+        }else if(month.equals( "02")){
+            month = "February ";
+
+        }else if(month.equals( "03")){
+            month = "March ";
+
+        }else if(month.equals( "04")){
+            month = "April ";
+
+        }else if(month.equals("05")){
+            month = "May ";
+
+        }else if(month.equals("06")){
+            month = "June ";
+
+        }else if(month.equals( "07")){
+            month = "July ";
+
+        }else if(month.equals("08")){
+            month = "August ";
+
+        }else if(month.equals("09")){
+            month = "September ";
+
+        }else if(month.equals("10")){
+            month = "October ";
+
+        }else if(month.equals("11")){
+            month = "November ";
+
+        }else if(month.equals("12")){
+            month = "December ";
+        }
+
+        System.out.println(month + dayYear);
+
 
     }
+
+
+
 }
