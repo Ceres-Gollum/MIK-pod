@@ -1,9 +1,13 @@
+import java.util.Scanner;
+
 public class MattBonus {
+
         public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
             //=============Bonus 1
 //        Create date format converter application.
 //        System.out.println("Enter a date: MM/DD/YYY");
-//        String userInput = input.nextLine();
+        String userInput = input.nextLine();
 //        String [] arrOfDate = userInput.split("/", 3);
 //        String month = arrOfDate[0];
 //        String day = arrOfDate[1];
@@ -39,7 +43,7 @@ public class MattBonus {
             System.out.printf("Number of vowels in the string:  %s", count);
 
 
-            makes10(1,9); //true
+//            makes10(1,9); //true
         }
         //=============Bonus 3
 //    Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.
