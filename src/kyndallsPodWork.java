@@ -1,30 +1,31 @@
-public class kyndallsPodWork {
-    public static void main(String[] args){
 
-    }
+
+public class kyndallsPodWork {
+//    public static void main(String[] args){
+//
+//    }
     //BONUS FOR PODS
 
     //multiply without *
 
-    public static int multiplyWithLoop(int num1, int num2){
-        int output = 0;
-        for(int i = 0; i < num2; i++){
-            output += num1;
-        }
-        return output;
-    }
+//    public static int multiplyWithLoop(int num1, int num2){
+//        int output = 0;
+//        for(int i = 0; i < num2; i++){
+//            output += num1;
+//        }
+//        return output;
+//    }
 
 
     //get the fractoral of a number
 
-    public static long fractoral(int num){
-        long output = 1;
-        for(int i = 1; i <= num; i++){
-            output *= i;
-        }
-        return output;
-    }
-
+//    public static long fractoral(int num){
+//        long output = 1;
+//        for(int i = 1; i <= num; i++){
+//            output *= i;
+//        }
+//        return output;
+//    }
 
 
 //    codeAcademy
@@ -111,5 +112,270 @@ public class kyndallsPodWork {
     //        boolean isPG = true;
     //    }
     //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //WEEK THREE POD WORK
+
+
+
+
+    //code academy practice
+
+    //1.-----------------------------------
+
+    /*
+    public class BadNames {
+	public static void main(String[] args) {
+		String 1stName = "Samira";
+    String blah = "Smith";
+    String .com = "samira@google.com";
+    int salaryexpectation = 100000;
+    int year_of_birth = 1955;
+
+    System.out.println("The program runs!");
+	}
+}
+*/
+
+    //changing them to correct names
+
+    /*
+    public class BadNames {
+	public static void main(String[] args) {
+		String firstName = "Samira";
+    String lastName = "Smith";
+    String email = "samira@google.com";
+    int salaryExpectation = 100000;
+    int yearOfBirth = 1955;
+	}
+}
+    */
+
+    //2.----------------------------------
+
+    /*
+    public class MyProfile {
+	public static void main(String[] args) {
+
+	}
+}
+     */
+
+    //putting my info with the correct var
+
+    /*
+    public class MyProfile {
+	public static void main(String[] args) {
+		String name = "Kyndall";
+    int age = 22;
+    double desiredSalary = 80000.00;
+    char gender = 'f';
+    boolean lookingForJob = true;
+	}
+}
+     */
+
+    //3.-----------------------------------
+
+    /*
+    public class GuessingGame {
+	public static void main(String[] args) {
+		int mystery1 = 8 + 6;
+    int mystery2 = 8 - 6;
+	}
+}
+     */
+
+    //printing the var that holds the value of 2
+
+    /*
+    public class GuessingGame {
+	public static void main(String[] args) {
+		int mystery1 = 8+6;
+    int mystery2 = 8-6;
+
+    System.out.println(mystery2);
+	}
+}
+     */
+
+    //4.------------------------------------
+
+    /*
+    public class PlusAndMinus {
+	public static void main(String[] args) {
+		int zebrasInZoo = 8;
+    int giraffesInZoo = 4;
+	}
+}
+     */
+
+    //subtracting and sout the remainder of zebras
+
+    /*
+    public class PlusAndMinus {
+	public static void main(String[] args) {
+		int zebrasInZoo = 8;
+    int giraffesInZoo = 4;
+
+    int animalsInZoo = zebrasInZoo + giraffesInZoo;
+    System.out.println(animalsInZoo);
+    int numZebrasAfterTrade = zebrasInZoo-2;
+    System.out.println(numZebrasAfterTrade);
+	}
+}
+     */
+
+    //5.--------------------------------------
+
+    /*
+    public class MultAndDivide {
+	public static void main(String[] args) {
+		double subtotal = 30;
+    double tax = 0.0875;
+	}
+}
+     */
+
+    //Creating a double variable called perPerson that holds total divided by 4
+
+    /*
+    public class MultAndDivide {
+	public static void main(String[] args) {
+		double subtotal = 30;
+    double tax = 0.0875;
+
+    double total = subtotal + subtotal*tax;
+
+    System.out.println(total);
+
+    double perPerson = total/4;
+
+    System.out.println(perPerson);
+	}
+}
+     */
+
+
+    //6.------------------------------------------
+
+    /*
+    public class Modulo {
+	public static void main(String[] args) {
+		int students = 26;
+	}
+}
+     */
+
+    //Create a variable called leftOut that holds the modulo of students and 3. Then, print the variable!
+
+    /*
+    public class Modulo {
+	public static void main(String[] args) {
+		int students = 26;
+
+    int leftOut = 26%3;
+
+    System.out.println(leftOut);
+	}
+}
+     */
+
+
+    //7.-------------------------------------------
+
+    /*
+    public class GreaterLessThan {
+	public static void main(String[] args) {
+		double creditsEarned = 176.5;
+    double creditsOfSeminar = 8;
+    double creditsToGraduate = 180;
+	}
+}
+     */
+
+    //
+
+    /*
+    public class GreaterLessThan {
+	public static void main(String[] args) {
+		double creditsEarned = 176.5;
+    double creditsOfSeminar = 8;
+    double creditsToGraduate = 180;
+
+    System.out.println(creditsEarned > creditsToGraduate);
+
+    double creditsAfterSeminar = creditsEarned + creditsOfSeminar;
+
+    System.out.println(creditsToGraduate < creditsAfterSeminar);
+	}
+}
+     */
+
+
+
+
+    //BONUS IN CLASS----------------------------------------------
+
+    //adding functionality to allow a user to add a new movie to the list
+
+//else if (option == 6){
+//        String name = input.getString("What is the name of the movie?");
+//        String category = input.getString("What category is the movie in?");
+//
+//        Movie newMovie = new Movie(name,category);
+//
+//        movies = addMovie(movies, newMovie);
+//        System.out.println("Added that movie to the list");
+//        }
+//        } while (input.yesNo("Would you like to continue y/n?"));
+//        }
+//public static Movie[] addMovie(Movie[] old, Movie movie) {
+//        Movie[] newArray = Arrays.copyOf(old, old.length + 1);
+//        newArray[newArray.length - 1] = movie;
+//        return newArray;
+//        }
+
+
+
 
 }
