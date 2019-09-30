@@ -28,7 +28,29 @@ public class Arrays {
         System.out.println(displayNumbers(numbers2));
 
 
+
+//        Write a Java program to remove the duplicate elements of a given array and return the new length of the array.
+//                Sample array: [20, 20, 30, 40, 50, 50, 50]
+//        After removing the duplicate elements the program should return 4 as the new length of the array.
+
+            int numbers3[] = {20, 20, 30, 40, 50, 50, 50};
+            System.out.println("Original array length: "+ numbers3.length);
+            System.out.println("Array elements are: " + displayNumbers(numbers3));
+            System.out.println("\nThe new length of the array is: "+ countOriginals(numbers3));
+
     }
+
+        public static int countOriginals(int[] nums) {
+            int index = 1;
+            for (int i = 1; i < nums.length; i++) {
+                if (nums[i] != nums[index-1])
+                    nums[index++] = nums[i];
+            }
+            return index;
+        }
+
+
+
 
     public static String displayNumbers(int[] nums){
         String numStr = "";
