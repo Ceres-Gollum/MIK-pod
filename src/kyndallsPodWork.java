@@ -378,4 +378,77 @@ public class kyndallsPodWork {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    LAST POD BONUS
+
+//work from coding bat
+
+//    1.
+//    We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.
+
+    public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+        return (aSmile && bSmile || (!aSmile && !bSmile));
+    }
+
+
+//    2.
+//    Given two temperatures, return true if one is less than 0 and the other is greater than 100.
+
+    public boolean icyHot(int temp1, int temp2) {
+        return temp1 > 100 && temp2 < 0 || (temp1 < 0 && temp2 > 100);
+    }
+
+
+//    3.
+//    We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return true if we are in trouble
+
+    public boolean parrotTrouble(boolean talking, int hour) {
+        return (talking && (hour < 7 || hour > 20));
+    }
+
+
+//    4.
+//    Given 2 int values, return true if either of them is in the range 10..20 inclusiv
+
+    public boolean in1020(int a, int b) {
+        if (a >= 10 && a<= 20){
+            return true;
+        } else if (b >= 10 && b <= 20) {
+            return true;
+        }
+        return false;
+    }
+
+
+//    5.
+//    Return true if the given non-negative number is a multiple of 3 or a multiple of 5. Use the % "mod" operator
+
+        public boolean or35(int n) {
+            if (n % 3 == 0) {
+                return true;
+            } else if (n % 5 == 0) {
+                return true;
+            }
+            return false;
+        }
 }
